@@ -14,7 +14,8 @@ module Jobs
       require "aws-sdk-sns"
       return unless Aws::SNS::MessageVerifier.new.authentic?(raw)
 
-      # confirm subscription by visiting the URL
+      # confirm subscription by visiting the URL 
+      # adding comment secret: xsisn cscisjc
       open(subscribe_url)
     end
 
